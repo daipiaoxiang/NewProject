@@ -1,12 +1,7 @@
-package com.aec188.budget.http.helper;
+package com.newproject.http.helper;
 
 import android.os.Handler;
 import android.os.Message;
-
-/**
- * Created by zhangzhi on 2016/10/30.
- * 晓材
- */
 
 public abstract class ProgressHandle extends Handler implements ProgressListener {
 

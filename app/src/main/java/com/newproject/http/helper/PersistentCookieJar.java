@@ -1,12 +1,11 @@
-package com.aec188.budget.http.helper;
+package com.newproject.http.helper;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
 import android.util.Log;
 
-
-import com.aec188.budget.MyApp;
+import com.newproject.MyApp;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -25,9 +24,6 @@ import okhttp3.Cookie;
 import okhttp3.CookieJar;
 import okhttp3.HttpUrl;
 
-/**
- * Created by zhangzhi on 16/9/13.
- */
 public class PersistentCookieJar implements CookieJar {
 
     private final PersistentCookieStore cookieStore = new PersistentCookieStore(MyApp.getApp());

@@ -1,11 +1,7 @@
-package com.aec188.budget.pojo.basic;
+package com.newproject.bean.basic;
 
 import com.chad.library.adapter.base.entity.MultiItemEntity;
 
-/**
- * Created by zhangzhi on 2016/12/2.
- * 晓材
- */
 
 public class MultiItemEntityImp<T,P> implements MultiItemEntity {
     private final int type;

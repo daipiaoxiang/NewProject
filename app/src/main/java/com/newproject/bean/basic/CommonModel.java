@@ -1,10 +1,11 @@
-package com.aec188.budget.pojo.basic;
+package com.newproject.bean.basic;
 
-import com.aec188.budget.pojo.Msg;
 import com.google.gson.annotations.Expose;
+import com.newproject.bean.Msg;
 
 /**
  * Created by Developer-X on 2016/11/16.
+ * error return
  */
 public class CommonModel <T> {
     @Expose

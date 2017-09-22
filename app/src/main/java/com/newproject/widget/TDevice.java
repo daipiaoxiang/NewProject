@@ -34,7 +34,7 @@ import android.view.ViewConfiguration;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
-import com.aec188.budget.AppConfig;
+import com.newproject.AppConfig;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -683,15 +683,15 @@ public class TDevice {
         return netType;
     }
 
-    public static String getIpAddress() {
-        WifiManager wifiManager = (WifiManager) getContext()
-                .getSystemService(Context.WIFI_SERVICE);
-        WifiInfo wifoInfo = wifiManager.getConnectionInfo();
-        int ip = wifoInfo.getIpAddress();
-
-        return (ip & 0xFF) + "." + ((ip >> 8) & 0xFF) + "."
-                + ((ip >> 16) & 0xFF) + "." + (ip >> 24 & 0xFF);
-    }
+//    public static String getIpAddress() {
+//        WifiManager wifiManager = (WifiManager) getContext()
+//                .getSystemService(Context.WIFI_SERVICE);
+//        WifiInfo wifoInfo = wifiManager.getConnectionInfo();
+//        int ip = wifoInfo.getIpAddress();
+//
+//        return (ip & 0xFF) + "." + ((ip >> 8) & 0xFF) + "."
+//                + ((ip >> 16) & 0xFF) + "." + (ip >> 24 & 0xFF);
+//    }
 
     /**
      * 隐藏软键盘
@@ -738,78 +738,78 @@ public class TDevice {
                 }).setNegativeButton("取消", null).show();
     }
 
-    public static String getUniqueId(Context context) {
-        String id="";
-        if(!redeUniqueId().isEmpty()){
-            id=redeUniqueId().trim();
-            return id;
-//            return redeUniqueId();
-        }
-        TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(context.TELEPHONY_SERVICE);
-        String imei = telephonyManager.getDeviceId();
-        String imsi = telephonyManager.getSubscriberId();
-        if (!imei.isEmpty()) {
-            id=imei;
-            return id;
-        }
-        if (!imei.isEmpty()) {
-            id=imsi;
-            return id;
-        }
-        String tmSerial = "" + telephonyManager.getSimSerialNumber();
-        String androidId = "" + android.provider.Settings.Secure.getString(context.getContentResolver(),
-                android.provider.Settings.Secure.ANDROID_ID);
-        UUID deviceUuid = new UUID(androidId.hashCode(), ((long) imei.hashCode() << 32) | tmSerial.hashCode());
-        String uniqueId = deviceUuid.toString();
-        if (!uniqueId.isEmpty()) {
-            id=uniqueId;
-            return id;
-        }
-        id=getUUID();
-        return id.trim();
-    }
+//    public static String getUniqueId(Context context) {
+//        String id="";
+//        if(!redeUniqueId().isEmpty()){
+//            id=redeUniqueId().trim();
+//            return id;
+////            return redeUniqueId();
+//        }
+//        TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(context.TELEPHONY_SERVICE);
+//        String imei = telephonyManager.getDeviceId();
+//        String imsi = telephonyManager.getSubscriberId();
+//        if (!imei.isEmpty()) {
+//            id=imei;
+//            return id;
+//        }
+//        if (!imei.isEmpty()) {
+//            id=imsi;
+//            return id;
+//        }
+//        String tmSerial = "" + telephonyManager.getSimSerialNumber();
+//        String androidId = "" + android.provider.Settings.Secure.getString(context.getContentResolver(),
+//                android.provider.Settings.Secure.ANDROID_ID);
+//        UUID deviceUuid = new UUID(androidId.hashCode(), ((long) imei.hashCode() << 32) | tmSerial.hashCode());
+//        String uniqueId = deviceUuid.toString();
+//        if (!uniqueId.isEmpty()) {
+//            id=uniqueId;
+//            return id;
+//        }
+//        id=getUUID();
+//        return id.trim();
+//    }
 
-    public static void setUniqueId(String s) {
-        String filePath = AppConfig.budgetFile;
-        //保存文件
-        File file = new File(filePath);
-        try {
-            OutputStream outstream = new FileOutputStream(file);
-            OutputStreamWriter out = new OutputStreamWriter(outstream);
-            out.write(s);
-            out.close();
-        } catch (java.io.IOException e) {
-            e.printStackTrace();
-        }
-//		writeTxtToFile(s,filePath,fileName);
-    }
+//    public static void setUniqueId(String s) {
+//        String filePath = AppConfig.budgetFile;
+//        //保存文件
+//        File file = new File(filePath);
+//        try {
+//            OutputStream outstream = new FileOutputStream(file);
+//            OutputStreamWriter out = new OutputStreamWriter(outstream);
+//            out.write(s);
+//            out.close();
+//        } catch (java.io.IOException e) {
+//            e.printStackTrace();
+//        }
+////		writeTxtToFile(s,filePath,fileName);
+//    }
 
-    public static String redeUniqueId() {
-        String content = ""; //文件内容字符串
-        //打开文件
-        File file = new File(AppConfig.budgetFile);
-        //如果path是传递过来的参数，可以做一个非目录的判断
-        if (file.isDirectory()) {
-            return content;
-        } else {
-            try {
-                InputStream instream = new FileInputStream(file);
-                if (instream != null) {
-                    InputStreamReader inputreader = new InputStreamReader(instream);
-                    BufferedReader buffreader = new BufferedReader(inputreader);
-                    String line;
-                    while ((line = buffreader.readLine()) != null) {
-                        content += line + "\n";
-                    }
-                    instream.close();
-                }
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return content;
-        }
-    }
+//    public static String redeUniqueId() {
+//        String content = ""; //文件内容字符串
+//        //打开文件
+//        File file = new File(AppConfig.budgetFile);
+//        //如果path是传递过来的参数，可以做一个非目录的判断
+//        if (file.isDirectory()) {
+//            return content;
+//        } else {
+//            try {
+//                InputStream instream = new FileInputStream(file);
+//                if (instream != null) {
+//                    InputStreamReader inputreader = new InputStreamReader(instream);
+//                    BufferedReader buffreader = new BufferedReader(inputreader);
+//                    String line;
+//                    while ((line = buffreader.readLine()) != null) {
+//                        content += line + "\n";
+//                    }
+//                    instream.close();
+//                }
+//
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            return content;
+//        }
+//    }
 
     //	public static void writeTxtToFile(String strcontent, String filePath, String fileName) {
 //		//生成文件夹之后，再生成文件，不然会出错

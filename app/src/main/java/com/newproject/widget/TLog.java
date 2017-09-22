@@ -1,8 +1,8 @@
-package com.aec188.minicad.widget;
+package com.newproject.widget;
 
 import android.util.Log;
 
-import com.aec188.minicad.AppConfig;
+import com.newproject.AppConfig;
 
 
 public class TLog {

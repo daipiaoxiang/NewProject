@@ -1,9 +1,9 @@
-package com.aec188.budget.http;
+package com.newproject.http;
 
-import com.aec188.budget.pojo.basic.CommonModel;
-import com.aec188.budget.pojo.Msg;
-import com.aec188.budget.utils.TDevice;
 import com.google.gson.Gson;
+import com.newproject.bean.Msg;
+import com.newproject.bean.basic.CommonModel;
+import com.newproject.widget.TDevice;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;

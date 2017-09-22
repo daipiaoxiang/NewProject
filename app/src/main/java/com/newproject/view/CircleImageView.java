@@ -1,4 +1,4 @@
-package com.aec188.budget.views;
+package com.newproject.view;
 
 
 import android.content.Context;
@@ -17,7 +17,7 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-public class CircleImageView extends ImageView {
+public class CircleImageView extends ImageView{
 
 	private static final ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;
 

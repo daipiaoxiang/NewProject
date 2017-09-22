@@ -1,4 +1,4 @@
-package com.aec188.budget.http.helper;
+package com.newproject.http.helper;
 
 import java.io.IOException;
 
@@ -9,11 +9,6 @@ import okio.BufferedSource;
 import okio.ForwardingSource;
 import okio.Okio;
 import okio.Source;
-
-/**
- * Created by zhangzhi on 2016/10/30.
- * 晓材
- */
 
 public class ProgressResponseBody extends ResponseBody {
     private final ResponseBody responseBody;

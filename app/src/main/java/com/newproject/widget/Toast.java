@@ -1,4 +1,4 @@
-package com.aec188.minicad.widget;
+package com.newproject.widget;
 
 import android.annotation.SuppressLint;
 import android.view.Gravity;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.aec188.minicad.MyApp;
-import com.aec188.minicad.R;
+import com.newproject.MyApp;
+import com.newproject.R;
 
 
 public class Toast {

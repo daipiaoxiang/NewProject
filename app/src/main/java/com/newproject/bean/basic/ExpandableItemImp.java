@@ -1,14 +1,10 @@
-package com.aec188.budget.pojo.basic;
+package com.newproject.bean.basic;
 
 import com.chad.library.adapter.base.entity.AbstractExpandableItem;
 import com.chad.library.adapter.base.entity.MultiItemEntity;
 
-/**
- * Created by zhangzhi on 2016/12/2.
- * 晓材
- */
 
-public class ExpandableItemImp<T,E> extends AbstractExpandableItem<E>  implements MultiItemEntity {
+public class ExpandableItemImp<T,E> extends AbstractExpandableItem<E> implements MultiItemEntity {
     public final T t;
     private final int level;
     private final int type;

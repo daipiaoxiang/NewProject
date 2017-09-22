@@ -1,15 +1,15 @@
-package com.aec188.budget.http;
+package com.newproject.http;
 
 import android.util.Log;
 
-import com.aec188.budget.AppConfig;
-import com.aec188.budget.BuildConfig;
-import com.aec188.budget.MyApp;
-import com.aec188.budget.http.helper.ProgressHandle;
-import com.aec188.budget.utils.GsonUtils;
 import com.franmontiel.persistentcookiejar.PersistentCookieJar;
 import com.franmontiel.persistentcookiejar.cache.SetCookieCache;
 import com.franmontiel.persistentcookiejar.persistence.SharedPrefsCookiePersistor;
+import com.newproject.AppConfig;
+import com.newproject.BuildConfig;
+import com.newproject.MyApp;
+import com.newproject.http.helper.ProgressHandle;
+import com.newproject.utils.GsonUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,10 +26,6 @@ import okio.Buffer;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * Created by zhangzhi on 2016/10/30.
- * 晓材
- */
 
 public class Api {
     static ApiService _instance = null;

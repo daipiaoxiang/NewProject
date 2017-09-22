@@ -1,4 +1,4 @@
-package com.aec188.budget.pojo;
+package com.newproject.bean;
 
 import android.text.TextUtils;
 
@@ -6,6 +6,7 @@ import com.google.gson.annotations.Expose;
 
 /**
  * Created by Developer-X on 2016/11/14.
+ * error field
  */
 public class Msg {
     @Expose
