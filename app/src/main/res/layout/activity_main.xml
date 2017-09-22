@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/menu_bottom" />
+
+    <RadioGroup
+        android:id="@+id/menu_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_tab_1"
+            style="@style/tab_main_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_tab_user"
+            android:drawablePadding="3dp"
+            android:text="店铺" />
+
+        <RadioButton
+            android:id="@+id/main_tab_2"
+            style="@style/tab_main_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/btn_tab_user"
+            android:text="客户" />
+
+        <RadioButton
+            android:id="@+id/main_tab_3"
+            style="@style/tab_main_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/btn_tab_user"
+            android:text="订单" />
+
+        <RadioButton
+            android:id="@+id/main_tab_user"
+            style="@style/tab_main_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/btn_tab_user"
+            android:text="我的" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/menu_bottom"
+        android:background="@color/divider" />
+
+</RelativeLayout>
+
+
+
