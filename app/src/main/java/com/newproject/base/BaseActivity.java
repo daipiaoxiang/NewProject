@@ -31,7 +31,8 @@ public abstract class BaseActivity extends AppCompatActivity{
 
     public TextView title;
     public Button mLeftButton;
-    public ImageView mRightButton;
+    public Button mRightButton;
+    public ImageView mRightImg;
     public TextView mRightTxt;
     public TextView mTip;
 
@@ -49,6 +50,7 @@ public abstract class BaseActivity extends AppCompatActivity{
                 title = ButterKnife.findById(actionBar, R.id.action_title);
                 mLeftButton = ButterKnife.findById(actionBar, R.id.left_button);
                 mRightButton = ButterKnife.findById(actionBar, R.id.right_button);
+                mRightImg = ButterKnife.findById(actionBar, R.id.right_img);
                 mRightTxt = ButterKnife.findById(actionBar, R.id.right_txt);
                 title.setText(getTitle());
                 mLeftButton.setOnClickListener(new View.OnClickListener() {
@@ -133,7 +135,6 @@ public abstract class BaseActivity extends AppCompatActivity{
         String str = getIntent().getStringExtra("data" + index);
         return GsonUtils.defaultGson().fromJson(str, clazz);
     }
-
     public <T> T getObject(Class<T> clazz) {
         return getObject(clazz, 0);
     }

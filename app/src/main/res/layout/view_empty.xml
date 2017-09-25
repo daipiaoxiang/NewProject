@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="150dp">
+
+    <TextView
+        android:id="@+id/empty_load_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/ic_no_wifi"
+        android:gravity="center"
+        android:text="网络异常"
+        android:textColor="#949494"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/empty_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/ic_no_data"
+        android:gravity="center"
+        android:text="没有找到资源"
+        android:textColor="#949494"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/empty_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--<ProgressBar-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:indeterminateDrawable="@drawable/bg_progressbar" /
+    >-->
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_gravity="center" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/loading"
+            android:textColor="#949494"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

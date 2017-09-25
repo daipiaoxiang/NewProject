@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ClearEditText">
+        <attr name="mode" format="enum">
+            <enum name="none" value="0" />
+            <enum name="mobile" value="1" />
+            <enum name="bank" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

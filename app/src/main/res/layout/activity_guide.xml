@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_blue_selector"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16sp"
+        android:paddingTop="2dp"
+        android:text="跳过" />
+
+  
+
+</RelativeLayout>
