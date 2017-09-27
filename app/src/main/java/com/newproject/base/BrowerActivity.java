@@ -20,6 +20,8 @@ import com.newproject.widget.Toast;
 @SuppressLint({"SetJavaScriptEnabled","JavascriptInterface"})
 public class BrowerActivity extends BaseActivity {
 
+	//调用传(地址,类名)
+
 	@Override
 	protected int getLayoutId() {
 		return R.layout.activity_base_web;

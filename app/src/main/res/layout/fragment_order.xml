@@ -13,21 +13,8 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="4"
+        android:text="order"
         android:textColor="@color/orange"
         android:textSize="60dp" />
-    <Button
-        android:id="@+id/btn_submit"
-        android:textColor="@color/white"
-        android:text="跳转列表"
-        android:layout_margin="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btn_photo"
-        android:textColor="@color/white"
-        android:text="跳转头像"
-        android:layout_margin="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
 </LinearLayout>

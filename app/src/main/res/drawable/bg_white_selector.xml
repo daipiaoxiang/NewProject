@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Even though these two point to the same resource, have two states so the drawable will invalidate itself when coming out of pressed state. -->
+    <!--
+    <item android:drawable="@color/light_gray" android:state_enabled="false" android:state_focused="true" android:state_pressed="true"/>
+    <item android:drawable="@color/light_gray" android:state_enabled="false" android:state_focused="true"/>
+    <item android:drawable="@color/transparent" android:state_focused="true" android:state_pressed="true"/>
+    <item android:drawable="@color/transparent" android:state_focused="false" android:state_pressed="true"/>
+    <item android:drawable="@color/light_gray" android:state_focused="true"/>
+    -->
+    <item android:drawable="@color/divider" android:state_pressed="true"/>
+    <item android:drawable="@color/white"/>
+
+</selector>

@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.newproject"
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -29,12 +29,13 @@ dependencies {
     compile 'com.android.support:design:26.+'
     compile 'com.android.support:support-vector-drawable:26.+'
     testCompile 'junit:junit:4.12'
-    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.28'
-    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.28'  //adapter
+    compile 'com.jakewharton:butterknife:8.4.0'  //butter
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
     //gson
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
-    compile 'com.github.franmontiel:PersistentCookieJar:v1.0.0'
+    compile 'com.github.franmontiel:PersistentCookieJar:v1.0.0'  //CookieJar
+    compile 'in.srain.cube:ultra-ptr:1.0.11'           //PtrClassicFrameLayout
     compile files('libs/universal-image-loader-1.9.5.jar')
     compile files('libs/libammsdk.jar')
     compile files('libs/alipaySdk-20160825.jar')

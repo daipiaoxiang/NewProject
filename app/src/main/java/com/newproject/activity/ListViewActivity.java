@@ -11,6 +11,7 @@ import com.newproject.adapter.ZQuickAdapter;
 import com.newproject.adapter.ZViewHolder;
 import com.newproject.base.BaseActivity;
 import com.newproject.utils.MVCHelper;
+import com.newproject.widget.RecycleViewDivider;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +46,7 @@ public class ListViewActivity extends BaseActivity {
         });
         LinearLayoutManager manager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(manager);
+        mRecyclerView.addItemDecoration(new RecycleViewDivider(this,LinearLayoutManager.HORIZONTAL));
         adapter = new ZQuickAdapter<String>(R.layout.item_list, getData()) {
             @Override
             protected void convert(BaseViewHolder helper, String item) {

@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.newproject.R;
 import com.newproject.activity.ListViewActivity;
+import com.newproject.activity.PersonageActivity;
 import com.newproject.base.BaseFragment;
 
 import butterknife.BindView;
@@ -46,11 +47,18 @@ public class UserFragment extends BaseFragment {
     @Override
     protected void initView(View v) {
         mToolbar.setNavigationIcon(null);
-        mTitle.setText("标题");
+        mTitle.setText("我的");
         txt.setText(""+num);
     }
-    @OnClick(R.id.btn_submit)
+    @OnClick({R.id.btn_submit,R.id.btn_photo})
     public void onClick(View v){
-        startActivity(new Intent(getActivity(), ListViewActivity.class));
+        switch (v.getId()){
+            case R.id.btn_submit:
+                startActivity(new Intent(getActivity(), ListViewActivity.class));
+                break;
+            case R.id.btn_photo:
+                startActivity(new Intent(getActivity(), PersonageActivity.class));
+                break;
+        }
     }
 }

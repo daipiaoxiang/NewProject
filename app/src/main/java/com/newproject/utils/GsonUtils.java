@@ -16,11 +16,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-/**
- * Created by zhangzhi on 2016/11/2.
- * 晓材
- */
-
 public class GsonUtils {
     private static Gson _gson;
 

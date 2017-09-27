@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <Button
+        android:id="@+id/shoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="拍摄"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DAD9DB" />
+
+    <Button
+        android:id="@+id/from_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="从相册选择"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:textColor="@color/black"
+        android:text="取消"
+        android:textSize="18sp" />
+
+</LinearLayout>
